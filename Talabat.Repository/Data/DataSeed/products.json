@@ -1,0 +1,90 @@
+[
+  {
+    "Name": "Double Caramel Frappuccino",
+    "Description": "A rich and creamy blended beverage with double caramel syrup, coffee, and milk.",
+    "PictureUrl": "https://example.com/images/double_caramel_frappuccino.jpg",
+    "Price": 255,
+    "ProductBrandId": 12 ,
+    "ProductTypeId": 2
+  },
+  {
+
+    "Name": "Caramel Macchiato",
+    "Description": "A classic espresso drink with a layer of steamed milk topped with caramel sauce.",
+    "PictureUrl": "https://example.com/images/caramel_macchiato.jpg",
+    "Price": 45,
+    "ProductBrandId": 11 ,
+    "ProductTypeId": 6
+  },
+  {
+
+    "Name": "Mocha Latte",
+    "Description": "A coffee drink made with espresso, chocolate syrup, and steamed milk.",
+    "PictureUrl": "https://example.com/images/mocha_latte.jpg",
+    "Price": 45,
+    "ProductBrandId": 3 ,
+    "ProductTypeId": 5
+  },
+  {
+
+    "Name": "Cappuccino",
+    "Description": "A coffee drink made with espresso, steamed milk, and foamed milk.",
+    "PictureUrl": "https://example.com/images/cappuccino.jpg",
+    "Price": 35,
+    "ProductBrandId": 9, 
+    "ProductTypeId": 3
+  },
+  {
+
+    "Name": "Espresso",
+    "Description": "A concentrated coffee beverage made by forcing hot water through finely ground coffee.",
+    "PictureUrl": "https://example.com/images/espresso.jpg",
+    "Price": 65,
+    "ProductBrandId": 5, 
+    "ProductTypeId": 1
+  },
+  {
+
+    "Name": "Americano",
+    "Description": "A coffee drink made by adding hot water to espresso.",
+    "PictureUrl": "https://example.com/images/americano.jpg",
+    "Price": 55,
+    "ProductBrandId": 6, 
+    "ProductTypeId": 4
+  },
+  {
+
+    "Name": "Latte",
+    "Description": "A coffee drink made with espresso and steamed milk.",
+    "PictureUrl": "https://example.com/images/latte.jpg",
+    "Price": 35,
+    "ProductBrandId": 7, 
+    "ProductTypeId": 2
+  },
+  {
+
+    "Name": "Cold Brew",
+    "Description": "A coffee drink made by slowly brewing coffee grounds in cold water.",
+    "PictureUrl": "https://example.com/images/cold_brew.jpg",
+    "Price": 45,
+    "ProductBrandId": 8, 
+    "ProductTypeId": 8
+  },
+  {
+
+    "Name": "Affogato",
+    "Description": "A dessert made with a scoop of ice cream topped with espresso.",
+    "PictureUrl": "https://example.com/images/affogato.jpg",
+    "Price": 35,
+    "ProductBrandId": 9,
+    "ProductTypeId": 9
+  },
+  {
+    "Name": "Irish Coffee",
+    "Description": "A coffee drink made with espresso, Irish whiskey, sugar, and whipped cream.",
+    "PictureUrl": "https://example.com/images/irish_coffee.jpg",
+    "Price": 55,
+    "ProductBrandId": 10, 
+    "ProductTypeId": 10
+  }
+]
