@@ -13,6 +13,9 @@ namespace Talabat.ApIs.Extension
                                                //this here to make parameter called method 
         public static IServiceCollection AddApplicationServices(this  IServiceCollection services)
         {
+            //allow  caching configuration
+            services.AddSingleton<IResponseCacheSrevice,ResponseCacheService>();
+            
             //allow auto mapper configuration
             services.AddAutoMapper(typeof(MappingProfile));
 

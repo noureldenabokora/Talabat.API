@@ -36,8 +36,8 @@ namespace Talabat.ApIs.Controllers
             _unitOfWork = unitOfWork;
             _mapper = mapper;
         }
-
-       // [Authorize]
+        // 600 seeconds time to caching
+        [CachedAttribute(600)]
         [HttpGet]
                                                                                         // from qurery here as i send 5 paramater in object from class so i told to srever as take parameter from query params  this process is called REST which meaning sit down here for a temporery time
         public async Task<ActionResult<IReadOnlyList<ProductToRetuenDto>>> GetProducts([FromQuery] ProductSpecParams specParams)
@@ -51,6 +51,7 @@ namespace Talabat.ApIs.Controllers
 
         [ProducesResponseType(typeof(ProductToRetuenDto), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
+        [CachedAttribute(600)]
         [HttpGet("{id}")]
         public async Task<ActionResult<ProductToRetuenDto>> GetByIdAsync(int id)
         {
@@ -63,6 +64,8 @@ namespace Talabat.ApIs.Controllers
             return Ok(_mapper.Map<Product, ProductToRetuenDto>(product));
         }
 
+
+        [CachedAttribute(600)]
         [HttpGet("brands")] //  GET : api/products/brands
         public async Task<ActionResult<IReadOnlyList<ProductBrand>>> GetBrands()
         {
@@ -70,6 +73,7 @@ namespace Talabat.ApIs.Controllers
             return Ok(brands);
         }
 
+        [CachedAttribute(600)]
         [HttpGet("types")]  // GET : api/products/types
         public async Task<ActionResult<IReadOnlyList<ProductType>>> GetTypes()
         {
